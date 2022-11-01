@@ -648,9 +648,7 @@ html {
     }
 
     #btn-scroll-top:hover {
-        block-size: 75px ;
-        cursor: pointer ;
-        transition: 0.5s ;
+        display:none ;
     }
 
     #btn-scroll-top:not(hover) {
