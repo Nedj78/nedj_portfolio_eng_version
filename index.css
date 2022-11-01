@@ -1,387 +1,426 @@
 * {
-    box-sizing: border-box ;
-}
+        box-sizing: border-box ;
+    }
 
-strong { 
-    font-weight: bold ; 
-}
+    strong { 
+        font-weight: bold ; 
+    }
 
-.dark-mode {
-    background-color: rgba(255, 236, 192, 0.388) ;
-}
+    .dark-mode {
+        background-color: rgba(255, 236, 192, 0.388) ;
+    }
 
-::-webkit-scrollbar {
-    width: 15px ;
-}
+    i.fa-solid {
+        color: rgb(17, 20, 223) ;
+        font-size: 20pt ;
+        margin: 0 0 0 15px ;
+        padding: 5px 5px 5px 5px ;
+        border: solid thin blue ;
+    }
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(133, 133, 133) ; 
-}
+    .fa-solid:hover {
+        color: rgba(246, 46, 246, 0.73) ; 
+    }
+
+    i.fa-brands {
+        color: rgb(17, 20, 223) ;
+        font-size: 20pt ;
+        margin: 3px 0 0 15px ; 
+        padding: 5px 5px 5px 5px ;
+        border: solid thin blue ;
+    }
+
+    i.fa-brands:hover {
+        color: rgba(246, 46, 246, 0.73) ; 
+    }
+
+    ::-webkit-scrollbar {
+        inline-size: 15px ;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px rgb(133, 133, 133) ; 
+    }
    
-::-webkit-scrollbar-thumb {
-    background: rgb(49, 49, 49) ; 
-    border-radius: 10px ;
-}
+    ::-webkit-scrollbar-thumb {
+        background: rgb(49, 49, 49) ; 
+        border-radius: 10px ;
+    }
   
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(35, 35, 35, 0.582) ; 
-}
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(35, 35, 35, 0.582) ; 
+    }
 
-#tooltip .tooltiptext {
-    visibility: hidden ;
-    inline-size: 120px ;
-    background-color: #555 ;
-    color: #fff ;
-    text-align: center ;
-    border-radius: 6px ;
-    padding: 5px 0 ;
-    position: absolute ;
-    z-index: 1 ;
-    inset-block-end: 125% ;
-    inset-inline-start: 50% ;
-    margin-inline-start: -60px ;
-    opacity: 0 ;
-    transition: opacity 0.3s ;
-  }
+    #tooltip .tooltiptext {
+        visibility: hidden ;
+        inline-size: 120px ;
+        background-color: #555 ;
+        color: #fff ;
+        text-align: center ;
+        border-radius: 6px ;
+        padding: 5px 0 ;
+        position: absolute ;
+        z-index: 1 ;
+        inset-block-end: 125% ;
+        inset-inline-start: 50% ;
+        margin-inline-start: -60px ;
+        opacity: 0 ;
+        transition: opacity 0.3s ;
+    }
 
-#tooltip:hover .tooltiptext {
-    visibility: visible ;
-    opacity: 1 ;
-  }
+    #tooltip:hover .tooltiptext {
+        visibility: visible ;
+        opacity: 1 ;
+    }
 
-#tooltip .tooltiptext::after {
-    content: "" ;
-    position: absolute ;
-    inset-block-start: 100% ;
-    inset-inline-start: 50% ;
-    margin-inline-start: -5px ;
-    border-width: 5px ;
-    border-style: solid ;
-    border-color: #555 transparent transparent transparent ;
-  }
+    #tooltip .tooltiptext::after {
+        content: "" ;
+        position: absolute ;
+        inset-block-start: 100% ;
+        inset-inline-start: 50% ;
+        margin-inline-start: -5px ;
+        border-width: 5px ;
+        border-style: solid ;
+        border-color: #555 transparent transparent transparent ;
+    }
 
-.switch {
-    float: right ;
-    position: relative ;
-    display: inline-block ;
-    inline-size: 60px ;
-    block-size: 27px ;
-    border-radius: 5px ;
-  }
+    .switch {
+        float: right ;
+        position: relative ;
+        display: inline-block ;
+        inline-size: 60px ;
+        block-size: 27px ;
+        border-radius: 5px ;
+     }
   
-.switch input { 
-    opacity: 0 ;
-    inline-size: 0 ;
-    block-size: 0 ;
- }
+    .switch input { 
+        opacity: 0 ;
+        inline-size: 0 ;
+        block-size: 0 ;
+    }
   
-.slider {
-    position: absolute ;
-    cursor: pointer ;
-    inset-block-start: 0 ;
-    inset-inline-start: 2px ;
-    inset-inline-end: 7px ;
-    inset-block-end: 1px ;
-    background-color: #ccc ;
-    -webkit-transition: .4s ;
-    transition: .4s ;
-    border-radius: 3px ;
-  }
+    .slider {
+        position: absolute ;
+        cursor: pointer ;
+        inset-block-start: 0 ;
+        inset-inline-start: 2px ;
+        inset-inline-end: 7px ;
+        inset-block-end: 1px ;
+        background-color: #ccc ;
+        -webkit-transition: .4s ;
+        transition: .4s ;
+        border-radius: 3px ;
+    }
   
-.slider:before {
-    position: absolute ;
-    content: "" ;
-    block-size: 18px ;
-    inline-size: 15px ;
-    padding: 1px 0 1px 0 ;
-    inset-inline-start: 5px ;
-    inset-block-end: 3.5px ;
-    background-color: white ;
-    -webkit-transition: .4s ;
-    transition: .4s ;
-    border-radius: 3px ;
-  }
+    .slider:before {
+        position: absolute ;
+        content: "" ;
+        block-size: 18px ;
+        inline-size: 15px ;
+        padding: 1px 0 1px 0 ;
+        inset-inline-start: 5px ;
+        inset-block-end: 3.5px ;
+        background-color: white ;
+        -webkit-transition: .4s ;
+        transition: .4s ;
+        border-radius: 3px ;
+    }
   
-input:checked + .slider {
-    background-color: #2195f363 ;
-  }
+    input:checked + .slider {
+        background-color: #2195f363 ;
+    }
   
-input:focus + .slider {
-    box-shadow: 0 0 1px #2195f36c ;
-  }
+    input:focus + .slider {
+        box-shadow: 0 0 1px #2195f36c ;
+    }
   
-input:checked + .slider:before {
-    -webkit-transform: translateX(26px) ;
-    -ms-transform: translateX(26px) ;
-    transform: translateX(26px) ;
-}
+    input:checked + .slider:before {
+        -webkit-transform: translateX(26px) ;
+        -ms-transform: translateX(26px) ;
+        transform: translateX(26px) ;
+    }
 
-html, body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
-    margin: 0 0 ; 
-    padding: 0 0 ; 
-    overflow-x: hidden ;
-    scroll-behavior: smooth ;
-    margin: 20px 0 ;
-}
+    html, body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        margin: 0 0 ; 
+        padding: 0 0 ; 
+        overflow-x: hidden ;
+        scroll-behavior: smooth ;
+        margin: 20px 0 ;
+    }
 
-main {
-    min-block-size: 3000px ;
-    max-inline-size: 1700px ;  
-    margin: auto ;
-    padding: 30px 30px 30px 30px ;
-    box-shadow: 2px 2px 5px 9px rgba(128, 128, 128, 0.344) ;  
-    overflow-x: hidden ;
-    border: solid thin ;
-}
+    main {
+        min-block-size: 3000px ;
+        max-inline-size: 1700px ;  
+        margin: auto ;
+        padding: 30px 30px 30px 30px ;
+        box-shadow: 2px 2px 5px 9px rgba(128, 128, 128, 0.344) ;  
+        overflow-x: hidden ;
+        border: solid thin ;
+    }
 
-p {
-    line-height: 0.1cm ;
-    white-space: nowrap ;
-}
+    p {
+        line-height: 0.1cm ;
+        white-space: nowrap ;
+    }
 
-.profil-img {
-    float: right ;
-    border-radius: 50% ;
-    margin: -10px ;
-} 
+    .profil-img {
+        float: right ;
+        border-radius: 50% ;
+        margin: -10px ;
+    } 
 
-#english {
-    float: right ;
-    block-size: 25px ;
-    inline-size: 25px ;
-    cursor: pointer ; 
-    margin: 5px 5px 0 0 ;
-}
+    #english {
+        float: right ;
+        block-size: 25px ;
+        inline-size: 25px ;
+        cursor: pointer ; 
+        margin: 5px 5px 0 0 ;
+    }
 
-.profil-img:hover {
-    inline-size: 300px ;
-    block-size: 300px ;
-    margin: -20px -20px ;
-    transition: 0.6s ;
-} 
+    .profil-img:hover {
+        inline-size: 300px ;
+        block-size: 300px ;
+        margin: -20px -20px ;
+        transition: 0.6s ;
+    } 
 
-.profil-img:not(:hover) {
-    inline-size: 200px ;
-    block-size: 200px ;
-    transition: 0.6s ;
-} 
+    .profil-img:not(:hover) {
+        inline-size: 200px ;
+        block-size: 200px ;
+        transition: 0.6s ;
+    }    
 
-.intro {
-    border-radius: 10px ;
-    padding: 30px 30px 0 0 ;
-    background-color: rgba(190, 190, 190, 0.234) ;
-    word-break: break-all ;
-}
+    .intro {
+        border-radius: 10px ;
+        padding: 30px 30px 0 0 ;
+        background-color: rgba(190, 190, 190, 0.234) ;
+        word-break: break-all ;
+    }
 
-.element-line {
-    float: center ;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    font-size: 18pt ;
-    padding: 0 0 10px 40px ;
-    text-decoration: none ;
-}
+    .element-line {
+        float: center ;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: 18pt ;
+        padding: 0 0 10px 40px ;
+        text-decoration: none ;
+    }
 
-.element-line:hover {
-    text-underline-offset: 6px ;
-}
+    .element-line:hover {
+        text-underline-offset: 6px ;
+    }
 
-.contact {
-    padding: 2px 2px 2px 2px ;
-    line-height: 0.3cm ;
-    block-size: 220px ;
-}
+    .contact {
+        padding: 2px 2px 2px 2px ;
+        line-height: 0.3cm ;
+        block-size: 220px ;
+    }
 
-.element-line > span {
-    font-style: italic ;
-    font-size: 16pt ;
-}
+    .element-line > span {
+        font-style: italic ;
+        font-size: 16pt ;
+    }
 
-.address, .phone,.license,.mail,.nationality {
-    inline-size: 1600px ;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    font-size: medium ;
-    margin: 0 0 0 0 ;
-    padding: 30px 0 0 40px ;
-}
+    .address, .phone,.license,.mail,.nationality {
+        inline-size: 1600px ;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: medium ;
+        margin: 0 0 0 0 ;
+        padding: 30px 0 0 40px ;
+    }
 
-h1 {
-    font-size: 20pt ;
-    font-weight: 600 ;
-    letter-spacing: 0.03cm ;
-}
+    h1 {
+        font-size: 20pt ;
+        font-weight: 600 ;
+        letter-spacing: 0.03cm ;
+    }
 
-.white-space1{
-    block-size: 100px;
-}
+    .white-space1{
+        block-size: 100px;
+    }
 
-.white-space2 {
-    block-size: 100px ;
-}
+    .white-space2 {
+        block-size: 100px ;
+    }
 
-.white-space3 {
+    .white-space3 {
     block-size: 20px ;
-}
+    }
 
-.career, .education {
-    padding: 2px ;
-}
+    .career, .education {
+        padding: 2px ;
+    }
 
-.employer li, .school li {
-    display: inline-block ;
-    padding: 50px 0 0 50px ;
-    margin: 0 0 0 0 ;
-    inline-size: 200px ;
-    block-size: 50px ;
-    white-space: nowrap ;
-}
+    .employer li, .school li {
+        display: inline-block ;
+        padding: 50px 0 0 50px ;
+        margin: 0 0 0 0 ;
+        inline-size: 200px ;
+        block-size: 50px ;
+        white-space: nowrap ;
+    }
 
-.employer li > span.company {
+    .employer li > span.company {
+        font-weight: bold ;
+    }
+
+    .school li > span.institution {
+        font-weight: bold ;
+    }
+
+    .employer li ul li, .school li ul li {
+        display: block ;
+    }
+
+    #specific {
     font-weight: bold ;
-}
+    }
 
-.school li > span.institution {
-    font-weight: bold ;
-}
-
-.employer li ul li, .school li ul li {
-    display: block ;
-}
-
-#specific {
-    font-weight: bold ;
-}
-
-.employer > .date-1 {
+    .employer > .date-1 {
     padding: 5px 0 0 23px !important ;
-}
+    }
 
-.employer > .date-2 {
-    padding: 4px 0 0 27px !important ;
-}
+    .employer > .date-2 {
+        padding: 4px 0 0 27px !important ;
+    }
 
-.employer > .date-3 {
-    padding: 4px 0 0 30px !important ;
-}
+    .employer > .date-3 {
+        padding: 4px 0 0 30px !important ;
+    }
 
-.school > .date-4,
-.school > .date-5 {
-    padding: 5px 0 0 60px !important;
-    white-space: wrap ;
-}
+    .school > .date-4,
+    .school > .date-5 {
+        padding: 5px 0 0 60px !important;
+        white-space: wrap ;
+    }
 
-.experience {
-    padding: 0 0 0 0 ;
-    margin: 0 0 0 0 ;
-}
+    .experience {
+        padding: 0 0 0 0 ;
+        margin: 0 0 0 0 ;
+    }
 
-.position-title, .degree-title {
-    font-weight: bold ;
-    padding: 0 0 0 50px ;
-    margin: 8px 0 0 -50px ;
-    white-space: wrap ;
-}
+    .position-title, .degree-title {
+        font-weight: bold ;
+        padding: 0 0 0 50px ;
+        margin: 8px 0 0 -50px ;
+        white-space: wrap ;
+    }
 
-.missions, .courses {
-    padding: 0 0 0 60px ;
-    margin: 8px 0 0 280px ;
-    white-space: wrap ;
-    line-height: 0.7cm ;
-}
+    .missions, .courses {
+        padding: 0 0 0 60px ;
+        margin: 8px 0 0 280px ;
+        white-space: wrap ;
+        line-height: 0.7cm ;
+    }
 
-.skills {
-    line-height: 15pt ;
-    padding: 0 0 0 70px ;
-    margin: 30px 0 0 280px ; 
-    font-style: italic ;
-}
+    .skills {
+        line-height: 15pt ;
+        padding: 0 0 0 70px ;
+        margin: 30px 0 0 280px ; 
+        font-style: italic ;
+    }
 
-.role-info, .degree-info {
-    padding: 10px 0 0 65px ;
-    margin: 0 0 0 280px ;
-}
+    .role-info, .degree-info {
+        padding: 10px 0 0 65px ;
+        margin: 0 0 0 280px ;
+    }
 
-.abilities {
-    margin: 0 0 30px 0 ;
-}
+    .abilities {
+        margin: 0 0 30px 0 ;
+    }
 
-.company, .institution {
-    padding: 0 0 0 50px ;
-}
+    .company, .institution {
+        padding: 0 0 0 50px ;
+    }
 
-.abilities-1, .abilities-2 {
-    display: inline-block ;
-    margin: 60px 150px 0 30px ;
-    line-height: 0.6cm ;
-}
+    .abilities-1, .abilities-2 {
+        display: inline-block ;
+        margin: 60px 150px 0 30px ;
+        line-height: 0.6cm ;
+    }
 
-.abilities-1 b {
-    font-weight: bold ;
-}
+    .abilities-1 b {
+        font-weight: bold ;
+    }
 
-.abilities-1 p {
-    display: block ;
-    word-break: break-all ;
-}
+    .abilities-1 p {
+        display: block ;
+        word-break: break-all ;
+    }
 
-div.abilities-2 {
-    font-size: 15pt ;
-    line-height: 0.8cm ;
-}
+    div.abilities-2 {
+        font-size: 15pt ;
+        line-height: 0.8cm ;
+    }
 
-.abilities-2 span {
-    font-weight: bold ;
-    font-size: 20pt ;
-}
+    .abilities-2 span {
+        font-weight: bold ;
+        font-size: 20pt ;
+    }
 
-.side-project {
-    display: inline-block ;
-    inline-size: 1300px ;
-    margin: 30px 0px 0 20px ;
-    line-height: 0.8cm ;
-    font-size: 13pt ;
-}
+    .side-project {
+        display: inline-block ;
+        inline-size: 1300px ;
+        margin: 30px 0px 0 20px ;
+        line-height: 0.8cm ;
+        font-size: 13pt ;
+    }
 
-.footer {
-    text-align: center ;
-    overflow-y: hidden ;
-    padding: 200px 0 12px 0 ;
-    font-size: 12pt ;
-}
+    .footer {
+        text-align: center ;
+        overflow-y: hidden ;
+        padding: 200px 0 12px 0 ;
+        font-size: 12pt ;
+    }
 
-.notice {
-    display: none ;
-}
+    .notice {
+        display: none ;
+    }
 
-#btn-scroll-top {
-    z-index: 999 ;
-    top: 0 ;
-    display: none ;
-    position: fixed ;
-    background-color: rgba(80, 100, 93, 0.154) ;
-    inline-size: 100% ;
-    block-size: 50px ;
-}
+    #btn-scroll-top {
+        z-index: 999 ;
+        top: 0 ;
+        display: none ;
+        position: fixed ;
+        background-color: rgba(80, 100, 93, 0.154) ;
+        inline-size: 100% ;
+        block-size: 50px ;
+    }
 
-#btn-scroll-top:hover {
-    cursor: pointer ;
-}
+    #btn-scroll-top:hover {
+        block-size: 75px ;
+        cursor: pointer ;
+        transition: 0.5s ;
+    }
 
-#btn-scroll-top i {
-    padding: 0.5% 50% ;
-    font-size: 20pt ;
-    color: rgba(128, 128, 128, 0.317) ;
-}
+    #btn-scroll-top:not(hover) {
+        block-size: 50px ;
+        transition: 0.5s ;
+    }
 
-#btn-scroll-top i:hover {
-    color: rgb(145, 207, 255) ;
-    font-size: 25pt ;
-    transition: 0.5s ;
-}
+    #btn-scroll-top:hover i.fa-sharp {
+        font-size: 30pt ;
+        padding: 1% 50% ;
+        block-size: 50px ;
+        transition: 0.5s ;
+    }
 
-#btn-scroll-top i:not(hover) {
-    transition: 0.5s ;
-}
+    #btn-scroll-top > i.fa-sharp {
+        padding: 0.5% 50% ;
+        font-size: 20pt ;
+        color: rgba(128, 128, 128, 0.317) ;
+        border: none ;
+    }
+
+    #btn-scroll-top i:hover {
+        color: rgb(145, 207, 255) ;
+        font-size: 25pt ;
+        transition: 0.5s ;
+    }
+
+    #btn-scroll-top i:not(hover) {
+        transition: 0.5s ;
+    }
 
 /** RESPONSIVE**/
 
@@ -391,14 +430,23 @@ div.abilities-2 {
         display: none ;
     }
 
-    html {
+html {
         overflow-y: hidden ;
         overflow-x: hidden ;
     }
 
     main {
+        display: none ;
         border: none ;
         box-shadow: none ;
+    }
+
+    i.fa-solid {
+        display: none ;
+    }
+
+    .slider {
+        display: none ;
     }
 
     .notice {
@@ -418,6 +466,27 @@ div.abilities-2 {
 
     html {
         margin: 2px 0 0 2px ;
+    }
+
+    .fa-solid {
+        display: inline-block ;
+    }
+
+    i.fa-brands {
+        color: rgb(17, 20, 223);
+        font-size: 20pt;
+        margin: 50px 0 0 -10px;
+        padding: 0px 3px 10px -40px;
+        border: solid thin blue;
+    }
+
+    .white-space1 {
+        block-size: 50px ;
+        margin: 0 0 0 50px ; 
+    }
+
+    .slider {
+        display: none ;
     }
 
     main {
@@ -494,7 +563,7 @@ div.abilities-2 {
         display: block ;
         margin: -40px 0 20px -115px ;
         font-size: 11pt ;
-     }
+    }
 
     .role-info, .degree-info, .missions, .courses {
         text-align: start ;
@@ -506,7 +575,6 @@ div.abilities-2 {
     .role-info {
         line-height: 15pt ;
     }
-
 
     #below-date2 {
         display: block ;
@@ -567,27 +635,49 @@ div.abilities-2 {
     .side-project li {
         display: inline-block ;
         inline-size: 350px ;
-        margin: 0 0px 0 -37px ;
+        margin: 0 0 0 -37px ;
         line-height: 0.5cm ;
         font-size: 10pt ;
     }
 
-    #btn-scroll-top {
-        z-index: 999 ;
-        top: 0 ;
-        left: 0 ;
-        display: none ;
-        position: fixed ;
-        background-color: rgba(80, 100, 93, 0.154) ;
-        inline-size: 100% ;
-        block-size: 50px ;
-        padding: 10px 0 ;
+    #btn-scroll-top > i.fa-sharp {
+        padding: 2% 50% ;
+        font-size: 20pt ;
+        color: rgba(128, 128, 128, 0.317) ;
+        border: none ;
     }
 
-    .footer {
-        text-align: center ;
-        font-size: 8pt ;
+    #btn-scroll-top:hover {
+        block-size: 75px ;
+        cursor: pointer ;
+        transition: 0.5s ;
     }
+
+    #btn-scroll-top:not(hover) {
+        block-size: 50px ;
+        transition: 0.5s ;
+    }
+
+    #btn-scroll-top:hover i.fa-sharp {
+        font-size: 30pt ;
+        padding: 2% 50% ;
+        block-size: 50px ;
+        transition: 0.5s ;
+    }
+
+    #btn-scroll-top i:hover {
+        color: rgb(145, 207, 255) ;
+        font-size: 25pt ;
+        transition: 0.5s ;
+    }
+
+    #btn-scroll-top i:not(hover) {
+        transition: 0.5s ;
+    }
+
+    .switch {
+        display: none ;
+      }
 }
 
 @media screen and (min-width: 418px) and (max-width: 500px) {
@@ -595,6 +685,18 @@ div.abilities-2 {
     .intro {
         block-size: 500px ;
         padding: 10px 10px 0 0 ;
+    }
+
+    i.fa-solid {
+        display: inline-block ;
+    }
+
+    .fa-brands {
+        display: none ;
+    }
+
+    .slider {
+        display: none ;
     }
 
     .contact {
@@ -719,9 +821,21 @@ div.abilities-2 {
 
 @media screen and (min-width: 501px) and (max-width: 780px) {
 
+    i.fa-solid {
+        display: inline-block ;
+    }
+    
+    .fa-brands {
+        display: none ;
+    }
+
     .intro {
         block-size: 500px ;
         padding: 10px 10px 0 0 ;
+    }
+
+    .slider {
+        display: none ;
     }
 
     .contact {
@@ -774,6 +888,18 @@ div.abilities-2 {
         margin: 0 0 0 5px ;
     } 
 
+    i.fa-solid {
+        display: inline-block ;
+    }
+
+    .fa-brands {
+        display: none ;
+    }
+
+    .slider {
+        margin: 0 0 0 0 ;
+    }
+
     .element-line {
         font-size: 14pt ;
     }
@@ -783,7 +909,7 @@ div.abilities-2 {
     }
 
     .white-space1, .white-space3 {
-        block-size: 60px ;
+        block-size: 90px ;
     }
 
     h1 {
