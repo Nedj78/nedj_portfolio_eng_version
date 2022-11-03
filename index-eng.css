@@ -648,11 +648,11 @@ html {
     }
 
     #btn-scroll-top {
-        block-size: 45px ;
+        block-size: 40px ;
     }
 
     #btn-scroll-top:hover {
-        block-size: 45px ;
+        block-size: 40px ;
     }
 
     #btn-scroll-top:hover i.fa-sharp {
