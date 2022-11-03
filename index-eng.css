@@ -647,7 +647,7 @@ html {
         border: none ;
     }
 
-    #btn-scroll-top:hover {
+    #btn-scroll-top {
         block-size: 45px ;
     }
 
