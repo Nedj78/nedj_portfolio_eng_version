@@ -668,6 +668,10 @@ html {
     .switch {
         display: none;
     }
+        
+    .footer {
+        margin: 0 10px 0 0 ;
+    }
 }
 
 @media screen and (min-width: 418px) and (max-width: 500px) {
